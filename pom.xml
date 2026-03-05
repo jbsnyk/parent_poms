@@ -3,26 +3,23 @@ xml
     <modelVersion>4.0.0</modelVersion>
     
     <groupId>com.example</groupId>
-    <artifactId>parent-pom</artifactId>
-    <version>1.0.0</version>
+    <artifactId>corporate-parent</artifactId>
+    <version>2.1.0</version>
     <packaging>pom</packaging>
     
-    <dependencyManagement>
-        <dependencies>
-            <!-- Versions managed here -->
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-dependencies</artifactId>
-                <version>2.5.0</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-            
-            <dependency>
-                <groupId>com.fasterxml.jackson.core</groupId>
-                <artifactId>jackson-databind</artifactId>
-                <version>2.12.3</version>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
+    
+    <build>
+        <pluginManagement>
+            <!-- Build plugins, compiler settings, etc. -->
+        </pluginManagement>
+    </build>
+    
+    <distributionManagement>
+        <!-- Artifact repository config -->
+    </distributionManagement>
 </project>
